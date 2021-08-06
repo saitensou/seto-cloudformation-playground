@@ -1,0 +1,8 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: >
+  Init Stack v1.0
+Resources:
+  BootstrapStepFunctionStack:
+    Type: AWS::CloudFormation::Stack
+    Properties:
+      - TemplateURL # <-- this no s3 bucket link if deploy first time: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stack.html#cfn-cloudformation-stack-templateurl
